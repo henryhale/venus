@@ -1,0 +1,33 @@
+{
+  "name": "venus",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A simulation of a predator-prey world",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryhale/venus.git"
+  },
+  "author": {
+    "name": "Henry Hale",
+    "url": "https://github.com/henryhale"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henryhale/venus/issues"
+  },
+  "homepage": "https://github.com/henryhale/venus#readme",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}
