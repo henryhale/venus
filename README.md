@@ -1,6 +1,6 @@
 <div align="center">
 
-![](./dist/favicon.png)
+![](./public/favicon.png)
 
 # venus
 A simulation of a predator-prey world
