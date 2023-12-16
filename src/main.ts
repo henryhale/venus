@@ -1,6 +1,6 @@
 import "./style.css";
 
-import { CANVAS_HEIGHT, CANVAS_WIDTH, CTX_ERROR, PREDATOR_MAX_AGE, PREY_MAX_AGE } from "./constants";
+import { CANVAS_HEIGHT, CANVAS_WIDTH, CTX_ERROR, MAX_SPECIES_POPULATION, PREDATOR_MAX_AGE, PREY_MAX_AGE } from "./constants";
 import { createLoop, createStats, drawGrid, randomLocation } from "./helpers";
 import Predator from "./models/predator";
 import Prey from "./models/prey";
@@ -104,8 +104,8 @@ function update(dt: number) {
     prey.splice(0, 0, ...$prey);
     predators.splice(0, 0, ...$predators);
 
-    // terminate when either prey or predators go extinct
-    if (!prey.length || !predators.length) {
+    // terminate when either prey or predators go extinct or incase of large population
+    if (!prey.length || !predators.length || prey.length > MAX_SPECIES_POPULATION) {
         stopBtn.click();
     }
 }

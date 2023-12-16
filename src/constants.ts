@@ -41,3 +41,5 @@ export const PREY_MATURITY_AGE_FACTOR = 0.5; // of the max age
 export const PREDATOR_MATURITY_AGE_FACTOR = 0.5; // of the max age
 
 export const MAX_CHILDREN = 3;
+
+export const MAX_SPECIES_POPULATION = 300;
